@@ -1,0 +1,91 @@
+{
+ "autoname": "P-.######",
+ "creation": "2019-11-05 10:42:41.679393",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "player_name",
+  "player_age",
+  "mobile_number",
+  "email_address",
+  "gender",
+  "column_break_6",
+  "attach_photo",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "player_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Player Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "player_age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Player Age",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Image",
+   "label": "Photo",
+   "options": "attach_photo"
+  },
+  {
+   "fieldname": "attach_photo",
+   "fieldtype": "Attach Image",
+   "label": "Attach Photo"
+  }
+ ],
+ "modified": "2020-10-30 18:09:23.986228",
+ "modified_by": "vimalrathod@vvsdtz.com",
+ "module": "Sports Tournament",
+ "name": "Player",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

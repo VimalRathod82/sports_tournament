@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "autoname": "M-.######",
+ "creation": "2019-11-02 12:21:22.987732",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tournament_name",
+  "sport_game_name",
+  "sport_group_name",
+  "column_break_3",
+  "ground_name",
+  "sport_game_name1",
+  "game_date_time",
+  "column_break_6",
+  "team_one",
+  "team_two",
+  "ref_team_name",
+  "no_of_games",
+  "column_break_8",
+  "team_1_name",
+  "team_2_name",
+  "ref_team_name_name",
+  "refereeing_team_penalty",
+  "scores_section",
+  "match_games",
+  "awards_column",
+  "match_awards"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "tournament_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tournament Name",
+   "options": "Tournament",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "sport_group_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Group Name",
+   "options": "Sport Group"
+  },
+  {
+   "columns": 3,
+   "fieldname": "ground_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ground Name",
+   "options": "Sports Ground",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "game_date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Game Date & Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ref_team_name",
+   "fieldtype": "Link",
+   "label": "Refereeing Team",
+   "options": "Sport Team",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_games",
+   "fieldtype": "Int",
+   "label": "Best of ??",
+   "reqd": 1
+  },
+  {
+   "fieldname": "refereeing_team_penalty",
+   "fieldtype": "Int",
+   "label": "Refereeing Team Penalty"
+  },
+  {
+   "fieldname": "scores_section",
+   "fieldtype": "Section Break",
+   "label": "Scores"
+  },
+  {
+   "fieldname": "match_games",
+   "fieldtype": "Table",
+   "label": "Match Games",
+   "options": "Match Game"
+  },
+  {
+   "fieldname": "awards_column",
+   "fieldtype": "Section Break",
+   "label": "Awards"
+  },
+  {
+   "fieldname": "match_awards",
+   "fieldtype": "Table",
+   "label": "Match Awards",
+   "options": "Match Award"
+  },
+  {
+   "fieldname": "sport_game_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sports Game",
+   "options": "Tournament Game",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sport_game_name.sport_game_name",
+   "fieldname": "sport_game_name1",
+   "fieldtype": "Read Only",
+   "label": "Sports Game Name"
+  },
+  {
+   "fetch_from": "ref_team_name.team_name",
+   "fieldname": "ref_team_name_name",
+   "fieldtype": "Read Only",
+   "label": "Refereeing Team Name"
+  },
+  {
+   "fieldname": "team_one",
+   "fieldtype": "Link",
+   "label": "Team1",
+   "options": "Sport Team",
+   "reqd": 1
+  },
+  {
+   "fieldname": "team_two",
+   "fieldtype": "Link",
+   "label": "Team2",
+   "options": "Sport Team",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "team_one.team_name",
+   "fieldname": "team_1_name",
+   "fieldtype": "Read Only",
+   "label": "Team1 Name"
+  },
+  {
+   "fetch_from": "team_two.team_name",
+   "fieldname": "team_2_name",
+   "fieldtype": "Read Only",
+   "label": "Team2 Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-19 21:58:22.601794",
+ "modified_by": "Administrator",
+ "module": "Sports Tournament",
+ "name": "Match",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sports Tournament Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

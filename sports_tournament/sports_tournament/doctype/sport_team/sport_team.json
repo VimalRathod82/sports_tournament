@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "autoname": "TEAM-.######",
+ "creation": "2019-11-01 15:35:01.106384",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team_name",
+  "tournament_name",
+  "sport_game",
+  "sports_game_name",
+  "sport_group_name",
+  "column_break_6",
+  "team_logo",
+  "logo",
+  "section_break_5",
+  "team_players"
+ ],
+ "fields": [
+  {
+   "fieldname": "tournament_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tournament Name",
+   "options": "Tournament",
+   "reqd": 1
+  },
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Team Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "team_players",
+   "fieldtype": "Table",
+   "label": "Team Players",
+   "options": "Team Player",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sport_group_name",
+   "fieldtype": "Link",
+   "label": "Sport Group",
+   "options": "Sport Group",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sport_game.sport_game_name",
+   "fieldname": "sports_game_name",
+   "fieldtype": "Read Only",
+   "label": "Sports Game Name"
+  },
+  {
+   "fieldname": "sport_game",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sports Game",
+   "options": "Tournament Game",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "team_logo",
+   "fieldtype": "Attach Image",
+   "label": "Team Logo"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Image",
+   "label": "Logo",
+   "options": "team_logo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-09 16:19:28.693087",
+ "modified_by": "Administrator",
+ "module": "Sports Tournament",
+ "name": "Sport Team",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sports Tournament Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "team_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

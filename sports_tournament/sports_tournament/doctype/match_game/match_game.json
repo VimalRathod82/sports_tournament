@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "autoname": "MG.######",
+ "creation": "2019-11-10 17:37:08.190573",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "game_no",
+  "team_name",
+  "team_score",
+  "team_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "game_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Game No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "team_score",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Score "
+  },
+  {
+   "fieldname": "team_points",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-19 17:08:18.579066",
+ "modified_by": "Administrator",
+ "module": "Sports Tournament",
+ "name": "Match Game",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

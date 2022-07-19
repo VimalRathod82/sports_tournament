@@ -1,0 +1,70 @@
+{
+ "allow_guest_to_view": 1,
+ "autoname": "field:sport_game_name",
+ "creation": "2019-11-01 14:23:19.103192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sport_game_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "sport_game_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sport Game Name",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "is_published_field": "sport_game_name",
+ "modified": "2019-12-13 16:24:23.187296",
+ "modified_by": "vimalrathod@vvsdtz.com",
+ "module": "Sports Tournament",
+ "name": "Game",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sports Tournament Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "tournament-registration",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
