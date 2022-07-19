@@ -1,0 +1,56 @@
+{
+ "autoname": "SG-.######",
+ "creation": "2019-11-07 14:55:16.784079",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sport_game_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "sport_game_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sports Game",
+   "options": "Game",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-13 15:46:45.163377",
+ "modified_by": "vimalrathod@vvsdtz.com",
+ "module": "Sports Tournament",
+ "name": "Tournament Game",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sports Tournament Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "sport_game_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

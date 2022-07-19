@@ -1,0 +1,90 @@
+{
+ "autoname": "field:tournament_name",
+ "creation": "2019-11-01 13:32:21.049351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tournament_name",
+  "venue",
+  "column_break_3",
+  "start_date",
+  "end_date",
+  "section_break_5",
+  "sport_game_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "tournament_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tournament Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sport_game_name",
+   "fieldtype": "Table",
+   "label": "Sports Games",
+   "options": "Tournament Game",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-11-07 14:33:05.013695",
+ "modified_by": "vimalrathod@vvsdtz.com",
+ "module": "Sports Tournament",
+ "name": "Tournament",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sports Tournament Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

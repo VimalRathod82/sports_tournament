@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "autoname": "STP-.######",
+ "creation": "2019-11-01 15:38:23.535495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "player_name",
+  "player_name2",
+  "player_age",
+  "player_type_name"
+ ],
+ "fields": [
+  {
+   "fetch_from": "player_name.player_age",
+   "fieldname": "player_age",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Player Age",
+   "print_width": "10%"
+  },
+  {
+   "default": "PLAYER",
+   "fieldname": "player_type_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Player Type",
+   "options": "Player Type",
+   "print_width": "25%",
+   "reqd": 1
+  },
+  {
+   "fieldname": "player_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Player",
+   "options": "Player",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "player_name.player_name",
+   "fieldname": "player_name2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Player Name",
+   "print_width": "60%"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-09 17:57:56.539574",
+ "modified_by": "Administrator",
+ "module": "Sports Tournament",
+ "name": "Team Player",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "search_fields": "player_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
