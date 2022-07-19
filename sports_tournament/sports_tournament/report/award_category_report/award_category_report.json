@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "creation": "2019-11-22 18:55:03.660931",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2020-11-08 14:54:40.292875",
+ "modified_by": "Administrator",
+ "module": "Sports Tournament",
+ "name": "Award Category Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT TQ.Sport, TQ.Category, TQ.TeamName, TQ.PlayerName, TQ.Age, Count(TQ.Sport) AS NumberOfDups, TQ.tournament_name\r\nFROM (select t.sport_game_name1 as \"Sport\",\r\n        ma.award_category as \"Category\",\r\n        ma.team_name_name as \"TeamName\", \r\n        ma.player_name as \"PlayerName\",\r\n        tp.player_age as \"Age\", t.tournament_name\r\nfrom `tabMatch` t, `tabMatch Award` ma, `tabTeam Player` tp\r\nwhere ma.parent = t.name \r\n      and ma.player = tp.name) TQ\r\nGROUP BY TQ.Sport, TQ.CATEGORY, TQ.TEAMNAME, TQ.PLAYERNAME, TQ.AGE;",
+ "ref_doctype": "Match",
+ "report_name": "Award Category Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Sports Tournament Manager"
+  }
+ ]
+}
